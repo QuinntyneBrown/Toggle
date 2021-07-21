@@ -1,0 +1,16 @@
+<div class="toggler__header">
+  <ng-content select="[header]">
+
+  </ng-content>
+</div>
+
+<app-toggle-button (click)="toggle()">
+
+</app-toggle-button>
+
+<div class="toggler__content" *ngIf="!hide">
+  <ng-content select="[content]">
+
+  </ng-content>
+</div>
+
